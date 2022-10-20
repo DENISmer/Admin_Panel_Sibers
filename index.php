@@ -4,7 +4,7 @@
     session_start();
 
     include 'config_db.php';
-    header('Location: markup/login.php');
+    include 'markup/login.php';
     if($_SESSION['username']){
         include 'markup/personal_area.php';
     }
